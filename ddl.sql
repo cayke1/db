@@ -40,7 +40,7 @@ create table "Pedidos" (
   "avaliacao_id" integer,
   "codigo_confirmacao" varchar,
   "tempo_medio" timestamp,
-  "taxa_entrega" double,
+  "taxa_entrega" numeric(10, 2),
   "status" varchar,
   "preco" varchar,
   "created_at" timestamp,
@@ -50,9 +50,9 @@ create table "Pedidos" (
 create table "Produtos" (
   "id" integer PRIMARY KEY,
   "nome" varchar,
-  "preco" double,
+  "preco" numeric(10, 2),
   "descricao" varchar,
-  "preco_promocional" double,
+  "preco_promocional" numeric(10, 2),
   "created_at" timestamp,
   "last_update" timestamp
 );
@@ -72,7 +72,7 @@ create table "Pedidos_Produtos" (
   "produto_id" integer,
   "pedido_id" integer,
   "quantidade" integer,
-  "preco_unitario" double,
+  "preco_unitario" numeric(10, 2),
   "created_at" timestamp,
   "last_update" timestamp
 );
@@ -98,8 +98,8 @@ create table "Entregadores" (
 create table "Avaliacoes" (
   "id" integer PRIMARY KEY,
   "descricao" varchar,
-  "nota" double,
-  "data" timestamp,
+  "nota" numeric(10, 2),
+  "data" date,
   "created_at" timestamp,
   "last_update" timestamp
 );
