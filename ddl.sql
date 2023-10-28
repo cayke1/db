@@ -102,13 +102,14 @@ create table "Avaliacoes" (
   "data" date,
   "created_at" timestamp,
   "last_update" timestamp
+  "pedido_id" integer,
 );
 
 alter table "Pedidos" ADD FOREIGN KEY ("usuario_id") REFERENCES "Usuarios" ("id");
 
 alter table "Pedidos" ADD FOREIGN KEY ("estabelecimento_id") REFERENCES "Estabelecimentos" ("id");
 
-alter table "Pedidos" ADD FOREIGN KEY ("avaliacao_id") REFERENCES "Avaliacoes" ("id");
+alter table "Avaliacoes" ADD FOREIGN KEY ("pedido_id") REFERENCES "Pedidos" ("id");
 
 alter table "Enderecos" ADD FOREIGN KEY ("estabelecimento_id") REFERENCES "Estabelecimentos" ("id");
 

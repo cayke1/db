@@ -15,13 +15,13 @@ VALUES
   (4, 'Ana Souza', 'ana@email.com', '345.678.901-23', '(41) 34567-8901', 'senha234', NOW(), NOW()),
   (5, 'Luiz Pereira', 'luiz@email.com', '789.012.345-67', '(51) 45678-9012', 'senha567', NOW(), NOW());
 
-INSERT INTO "Avaliacoes" ("id", "descricao", "nota", "data", "created_at", "last_update")
+INSERT INTO "Avaliacoes" ("id", "descricao", "nota", "data", "created_at", "last_update", "pedido_id")
 VALUES
-  (1, 'Avaliação 1', 4.5, NOW(), NOW(), NOW()),
-  (2, 'Avaliação 2', 3.0, NOW(), NOW(), NOW()),
-  (3, 'Avaliação 3', 5.0, NOW(), NOW(), NOW()),
-  (4, 'Avaliação 4', 4.2, NOW(), NOW(), NOW()),
-  (5, 'Avaliação 5', 4.8, NOW(), NOW(), NOW());
+  (1, 'Avaliação 1', 4.5, NOW(), NOW(), NOW(), 1),
+  (2, 'Avaliação 2', 3.0, NOW(), NOW(), NOW(), 2),
+  (3, 'Avaliação 3', 5.0, NOW(), NOW(), NOW(), 3),
+  (4, 'Avaliação 4', 4.2, NOW(), NOW(), NOW(), 4),
+  (5, 'Avaliação 5', 4.8, NOW(), NOW(), NOW(), 5);
 
 INSERT INTO "Produtos" ("id", "nome", "preco", "descricao", "preco_promocional", "created_at", "last_update")
 VALUES
