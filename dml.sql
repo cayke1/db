@@ -71,10 +71,10 @@ VALUES
   (4, 4, 4, 4, 7.99, NOW(), NOW()),
   (5, 5, 5, 5, 9.99, NOW(), NOW());
 
-INSERT INTO "Enderecos" ("id", "ponto_de_referencia", "cep", "descricao_enderco", "usuario_id", "estabelecimento_id", "pedido_id", "created_at", "last_update")
+INSERT INTO "Enderecos" (ponto_de_referencia, cep, descricao_endereco, created_at, last_update, longitude, latitude)
 VALUES
-  (1, 'Ponto de Ref 1', '12345-678', 'Endereço 1', 1, 1, 1, NOW(), NOW()),
-  (2, 'Ponto de Ref 2', '23456-789', 'Endereço 2', 2, 2, 2, NOW(), NOW()),
-  (3, 'Ponto de Ref 3', '34567-890', 'Endereço 3', 3, 3, 3, NOW(), NOW()),
-  (4, 'Ponto de Ref 4', '45678-901', 'Endereço 4', 4, 4, 4, NOW(), NOW()),
-  (5, 'Ponto de Ref 5', '56789-012', 'Endereço 5', 5, 5, 5, NOW(), NOW());
+  ('Praça da Sé', '01001-000', 'Praça da Sé, São Paulo', '2023-10-30 09:00:00', '2023-10-30 09:00:00', -46.634621, -23.550520),
+  ('Avenida Paulista', '01311-000', 'Avenida Paulista, São Paulo', '2023-10-30 10:30:00', '2023-10-30 10:30:00', -46.656058, -23.561070),
+  ('Copacabana Beach', '22070-001', 'Copacabana Beach, Rio de Janeiro', '2023-10-30 08:45:00', '2023-10-30 08:45:00', -43.178625, -22.968134),
+  ('Golden Gate Bridge', '94129', 'Golden Gate Bridge, San Francisco', '2023-10-30 12:15:00', '2023-10-30 12:15:00', -122.478256, 37.819929),
+  ('Big Ben', 'SW1A 0AA', 'Big Ben, London', '2023-10-30 14:20:00', '2023-10-30 14:20:00', -0.124625, 51.500729);
